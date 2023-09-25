@@ -1,0 +1,228 @@
+.main {
+  background-color: #fbfbfb;
+}
+::ng-deep.mat-mdc-tab-label-container {
+  // height: 46px !important;
+}
+::ng-deep.mat-mdc-tab-label-container {
+  border-bottom: 3px solid #d7dfe9;
+}
+::ng-deep.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+  color: #3a4855 !important;
+}
+::ng-deep.mat-mdc-tab .mdc-tab__text-label {
+  color: rgba(126, 133, 142, 0.6) !important;
+  text-transform: uppercase !important;
+}
+::ng-deep.mat-mdc-tab-group,
+.mat-mdc-tab-nav-bar {
+  --mdc-tab-indicator-active-indicator-color: #0caca7 !important;
+  --mat-tab-header-active-hover-indicator-color: #0caca7 !important;
+  --mat-tab-header-active-focus-indicator-color: #0caca7 !important;
+}
+::ng-deep.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs
+  > .mat-mdc-tab-header
+  .mat-mdc-tab {
+  flex-grow: unset !important;
+}
+.search-input {
+  width: fit-content;
+  border-bottom: 1px solid #d7dfe9;
+
+  input {
+    border: none;
+    background-color: transparent;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  button {
+    color: #d7dfe9;
+    border: none !important;
+    outline: none !important;
+    background-color: unset;
+  }
+}
+/* Start Blockig */
+.backlog {
+  position: relative;
+  padding-left: 14px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #faa93b;
+  }
+}
+.menu {
+  button {
+    color: #7e858e;
+    border: none !important;
+    outline: none !important;
+    background-color: unset;
+  }
+}
+.list {
+  border: 1px solid #d7dfe9;
+  border-radius: 4px;
+  background-color: #fff;
+  .list-name {
+    color: #7e858e;
+    font-size: 14px;
+  }
+  .info{
+    p {
+      font-size: 17px;
+      color: #3a4855;
+      font-weight: 500
+    }
+  }
+  .details{
+    .flag{
+      .img{
+        width: 28px;
+        height: 28px;
+      }
+    }
+    span, .date{
+      font-weight: 500;
+      color: #ff0b37;
+    }
+  }
+  
+  .category{
+    .usability{
+      background-color: #fff1bb;
+      color: #ca9f00;
+      padding: 8px 10px;
+      border-radius: 4px;
+    }
+    .ui{
+      background-color: #f7c3d6;
+      color: #ec1c67;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    .save{
+      border-radius: 4px;
+      border: 1px solid #d7dfe9;
+      padding: 8px 10px;
+    }
+  }
+  .persons{
+    .person-imgs{
+      .person-img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        img{
+          border-radius: 50%;
+        }
+      }
+      .left{
+        position: relative;
+        left: -10px;
+      }
+      .left2{
+        position: relative;
+        left: -20px;
+      }
+      .left3{
+        position: relative;
+        left: -30px;
+        border: 1px solid #d7dfe9;
+        background-color: #fff;
+      }
+    }
+    .attachment{
+      .attachment-img{
+        width: 30px;
+        height: 30px;
+      }
+      .number{
+        color: #7e858e;
+      }
+    }
+    
+  }
+  
+}
+/* End Blockig */
+
+/* Start In progress*/ 
+.progress-in {
+  position: relative;
+  padding-left: 14px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #2dca73;
+  }
+}
+.progresIn{
+  .details{
+    .flag{
+      .img{
+        width: 28px;
+        height: 28px;
+      }
+    }
+    span.normal, .date{
+      font-weight: 500;
+      color: #00b2ca;
+    }
+  }
+}
+/* End In progress*/ 
+
+/* Start In review */
+.in-review {
+  position: relative;
+  padding-left: 14px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #a4e3fe;
+  }
+}
+/* End In review */
+
+/* Start Add Task */
+.add-task{
+  height: calc(100% - 50px) ;
+  border: 1px dashed #d7dfe9;
+  margin-top: auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* End Add Task */
+.grayColor{
+  color: #7e858e;
+}
+.plus-icon{
+  width: 20px;
+  height: 20px;
+}
+.share-btn{
+  width: fit-content;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  border: 1px solid #d7dfe9;
+  border-radius: 4px;
+  padding: 8px 10px;
+  cursor: pointer;
+  z-index: 9999;
+}
